@@ -33,7 +33,7 @@ npm run dev
 
 Visit `http://localhost:5173`
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 React 18 • Vite • Tailwind CSS • Lucide React
 
