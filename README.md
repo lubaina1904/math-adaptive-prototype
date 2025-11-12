@@ -1,49 +1,45 @@
 # Math Adventures - Adaptive Learning Prototype
 
-An AI-powered adaptive math learning system that adjusts difficulty based on student performance.
+An AI-powered adaptive math learning system that dynamically adjusts difficulty based on student performance in real-time.
 
-## Features
-- 3 difficulty levels (Easy, Medium, Hard)
-- Real-time adaptive difficulty adjustment
-- Performance tracking and analytics
-- Visual progress summaries
+## 🎯 Project Overview
 
-## Setup
+This prototype demonstrates how adaptive learning systems can personalize educational experiences for children aged 5-10 practicing basic math operations.
 
-1. Install dependencies:
+## ✨ Features
+
+- **3 Difficulty Levels:** Easy, Medium, and Hard
+- **Real-time Adaptation:** Automatically adjusts difficulty
+- **Performance Tracking:** Monitors accuracy, response time, and streaks
+- **Visual Feedback:** Immediate feedback on answers
+- **Progress Analytics:** Detailed session summaries
+
+## 🧠 Adaptive Logic
+
+Rule-based engine considering:
+1. **Recent Accuracy** - Last 3 problems
+2. **Response Time** - Speed indicates confidence
+
+### Rules:
+- 3 correct + fast (< 8s) → Harder
+- 2+ correct + moderate (< 15s) → Stay
+- ≤ 1 correct → Easier
+
+## 🚀 Setup
 ```bash
 npm install
-```
-
-2. Run the development server:
-```bash
 npm run dev
 ```
 
-3. Open http://localhost:5173 in your browser
+Visit `http://localhost:5173`
 
-## Adaptive Logic
+## 🛠️ Tech Stack
 
-The system uses rule-based adaptation that considers:
-- Recent accuracy (last 3 problems)
-- Response time (speed indicates confidence)
+React 18 • Vite • Tailwind CSS • Lucide React
 
-**Adaptation Rules:**
-- 3 correct + fast (< 8s) → increase difficulty
-- 2+ correct + moderate speed → maintain level
-- ≤ 1 correct → decrease difficulty
+## 🤔 Why Rule-Based?
 
-## Tech Stack
-- React 18
-- Vite
-- Tailwind CSS
-- Lucide React Icons
-```
-
-**7. `.gitignore`**
-```
-node_modules/
-dist/
-.env
-.DS_Store
-*.log
+✅ No training data needed  
+✅ Transparent logic  
+✅ Fast & reliable  
+✅ Easy to adjust
